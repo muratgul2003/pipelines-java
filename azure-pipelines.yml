@@ -8,6 +8,9 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
+  name: TestPool
+  demands:
+  - agent.name -equals TestAgent
 
 variables:
   buildConfiguration: 'Release'
